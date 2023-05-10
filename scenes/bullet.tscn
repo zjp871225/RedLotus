@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://gai8tnar67af"]
+
+[ext_resource type="Script" path="res://scripts/bullet.gd" id="1_h0scw"]
+[ext_resource type="Texture2D" uid="uid://hqurj8cv4l8t" path="res://png/bullet/texture.sprites/子弹2.tres" id="1_vb5dn"]
+[ext_resource type="Texture2D" uid="uid://xn5yhbgc5rnc" path="res://png/bullet/texture.sprites/子弹.tres" id="2_yfav6"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x3u3b"]
+radius = 6.0
+height = 18.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_28rrj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vb5dn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_yfav6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[node name="Bullet" type="Node2D"]
+script = ExtResource("1_h0scw")
+metadata/_edit_group_ = true
+
+[node name="Area2D" type="Area2D" parent="." groups=["bullet"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CapsuleShape2D_x3u3b")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2.38419e-07, -2.38419e-07)
+scale = Vector2(0.354167, 0.271429)
+sprite_frames = SubResource("SpriteFrames_28rrj")
+frame_progress = 0.280419
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

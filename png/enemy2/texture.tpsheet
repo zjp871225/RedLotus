@@ -1,0 +1,48 @@
+{
+	"textures": [
+		{
+			"image": "texture.png",
+			"size": {
+				"w": 586,
+				"h": 293
+			},
+			"sprites": [
+				{
+					"filename": "enemy2-1.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 293,
+						"h": 293
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enemy2-2.png",
+					"region": {
+						"x": 293,
+						"y": 0,
+						"w": 293,
+						"h": 293
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7",
+		"format": "RGBA8888",
+	}
+}

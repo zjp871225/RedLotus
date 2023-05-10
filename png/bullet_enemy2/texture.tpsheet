@@ -1,0 +1,48 @@
+{
+	"textures": [
+		{
+			"image": "texture.png",
+			"size": {
+				"w": 248,
+				"h": 131
+			},
+			"sprites": [
+				{
+					"filename": "子弹5.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 124,
+						"h": 131
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "子弹6.png",
+					"region": {
+						"x": 124,
+						"y": 0,
+						"w": 124,
+						"h": 131
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7",
+		"format": "RGBA8888",
+	}
+}

@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://bh38rd4w4jmme"
+path="res://.godot/imported/texture.tpsheet-816f43ffdf563b8bd76c7c44f11bb5ca.res"
+
+[deps]
+
+files=["res://png/bomb2/texture.sprites/bomb3.tres", "res://png/bomb2/texture.sprites/bomb4.tres", "res://png/bomb2/texture.sprites/bomb5.tres", "res://png/bomb2/texture.sprites/bomb6.tres", "res://png/bomb2/texture.sprites/bomb7.tres", "res://png/bomb2/texture.sprites/bomb8.tres", "res://png/bomb2/texture.sprites/bomb9.tres"]
+
+source_file="res://png/bomb2/texture.tpsheet"
+dest_files=["res://.godot/imported/texture.tpsheet-816f43ffdf563b8bd76c7c44f11bb5ca.res", "res://png/bomb2/texture.sprites/bomb3.tres", "res://png/bomb2/texture.sprites/bomb4.tres", "res://png/bomb2/texture.sprites/bomb5.tres", "res://png/bomb2/texture.sprites/bomb6.tres", "res://png/bomb2/texture.sprites/bomb7.tres", "res://png/bomb2/texture.sprites/bomb8.tres", "res://png/bomb2/texture.sprites/bomb9.tres"]
+
+[params]
+

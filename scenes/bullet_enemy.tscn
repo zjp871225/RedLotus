@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://rmvuc0gdgew3"]
+
+[ext_resource type="Script" path="res://scripts/bullet_enemy.gd" id="1_yilq3"]
+[ext_resource type="Texture2D" uid="uid://c1smju2a8o7qg" path="res://png/bullet_enemy/texture.sprites/子弹3.tres" id="2_ka0c0"]
+[ext_resource type="Texture2D" uid="uid://cvtsnmqr0j5xe" path="res://png/bullet_enemy/texture.sprites/子弹4.tres" id="3_ev4g1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b2d13"]
+radius = 3.41359
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_28rrj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ka0c0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ev4g1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="BulletEnemy" type="Node2D"]
+script = ExtResource("1_yilq3")
+
+[node name="Area2D" type="Area2D" parent="." groups=["enemy_bullet"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.23332, -0.208697)
+shape = SubResource("CircleShape2D_b2d13")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0.0348949, 0.444058)
+scale = Vector2(0.205398, 0.202703)
+sprite_frames = SubResource("SpriteFrames_28rrj")
+frame_progress = 0.809915
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(0.367307, 0.0876622)
+rotation = 0.0218076
+scale = Vector2(0.70391, 0.779568)
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

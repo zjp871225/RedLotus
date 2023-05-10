@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://bmmpyckrlo17g"
+path="res://.godot/imported/texture.tpsheet-e198ff6181088835c9ef69d963e0f941.res"
+
+[deps]
+
+files=["res://png/plane/texture.sprites/plane1.tres", "res://png/plane/texture.sprites/plane2.tres", "res://png/plane/texture.sprites/plane3.tres", "res://png/plane/texture.sprites/plane4.tres", "res://png/plane/texture.sprites/plane5.tres", "res://png/plane/texture.sprites/plane6.tres"]
+
+source_file="res://png/plane/texture.tpsheet"
+dest_files=["res://.godot/imported/texture.tpsheet-e198ff6181088835c9ef69d963e0f941.res", "res://png/plane/texture.sprites/plane1.tres", "res://png/plane/texture.sprites/plane2.tres", "res://png/plane/texture.sprites/plane3.tres", "res://png/plane/texture.sprites/plane4.tres", "res://png/plane/texture.sprites/plane5.tres", "res://png/plane/texture.sprites/plane6.tres"]
+
+[params]
+

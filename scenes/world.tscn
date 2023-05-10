@@ -1,0 +1,106 @@
+[gd_scene load_steps=12 format=3 uid="uid://dc1bwx770c1c5"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_vj362"]
+[ext_resource type="PackedScene" uid="uid://n2xmrj5g4iqc" path="res://scenes/plane.tscn" id="2_ocr0a"]
+[ext_resource type="PackedScene" uid="uid://c4j5kdiijdx2g" path="res://scenes/bg2.tscn" id="3_sopbn"]
+[ext_resource type="PackedScene" uid="uid://b0loajwuf71i8" path="res://ui/fade_in.tscn" id="4_waq37"]
+[ext_resource type="PackedScene" uid="uid://dbias1j6xhm5n" path="res://ui/count_down.tscn" id="5_i3r1i"]
+[ext_resource type="PackedScene" uid="uid://blm7uogrvu23g" path="res://ui/play_ui.tscn" id="6_wi2xg"]
+[ext_resource type="Script" path="res://scripts/control_game.gd" id="7_2ndh2"]
+[ext_resource type="PackedScene" uid="uid://deok7xagusaho" path="res://ui/guide.tscn" id="8_t18c5"]
+
+[sub_resource type="Curve2D" id="Curve2D_ifwmk"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 137.984, -4.38004, 0, 0, 0, 0, 473.984, -4.38004)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_xh3xj"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0.0979004, 19.9886, 0, 0, 0, 0, 0.0979004, 131.989)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_3rd6q"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 2.03857, 4.39783, 0, 0, 0, 0, 2.03857, 116.398)
+}
+point_count = 2
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_vj362")
+
+[node name="bg2" parent="." instance=ExtResource("3_sopbn")]
+
+[node name="plane" parent="." instance=ExtResource("2_ocr0a")]
+position = Vector2(8, 248)
+
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2(-1.98378, -7)
+curve = SubResource("Curve2D_ifwmk")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(319.593, -4.38004)
+progress = 181.608
+
+[node name="Path2D2" type="Path2D" parent="."]
+position = Vector2(-8.0979, 196.011)
+curve = SubResource("Curve2D_xh3xj")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D2"]
+position = Vector2(0.0979004, 19.9886)
+rotation = 1.5708
+
+[node name="Path2D3" type="Path2D" parent="."]
+position = Vector2(653.961, 219.602)
+curve = SubResource("Curve2D_3rd6q")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D3"]
+position = Vector2(2.03857, 4.39783)
+rotation = 1.5708
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[node name="Timer2" type="Timer" parent="."]
+wait_time = 10.0
+
+[node name="boss_timer" type="Timer" parent="."]
+wait_time = 20.0
+one_shot = true
+autostart = true
+
+[node name="boss_warning" type="Timer" parent="."]
+wait_time = 17.0
+one_shot = true
+autostart = true
+
+[node name="Label" parent="." instance=ExtResource("5_i3r1i")]
+offset_bottom = 463.0
+
+[node name="fade_in" parent="." instance=ExtResource("4_waq37")]
+
+[node name="play_ui" parent="." instance=ExtResource("6_wi2xg")]
+
+[node name="control_game" type="Node2D" parent="."]
+script = ExtResource("7_2ndh2")
+
+[node name="guide" parent="." instance=ExtResource("8_t18c5")]
+
+[node name="guide_timer" type="Timer" parent="."]
+process_mode = 3
+wait_time = 6.0
+one_shot = true
+autostart = true
+
+[connection signal="add_hp" from="plane" to="control_game" method="_on_plane_add_hp"]
+[connection signal="player_dead" from="plane" to="control_game" method="_on_plane_player_dead"]
+[connection signal="power_sub" from="plane" to="control_game" method="_on_plane_power_sub"]
+[connection signal="sub_hp" from="plane" to="control_game" method="_on_plane_sub_hp"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
+[connection signal="timeout" from="boss_timer" to="." method="_on_boss_timer_timeout"]
+[connection signal="timeout" from="boss_timer" to="control_game" method="_on_boss_timer_timeout"]
+[connection signal="timeout" from="boss_warning" to="control_game" method="_on_boss_warning_timeout"]
+[connection signal="timeout" from="guide_timer" to="." method="_on_guide_timer_timeout"]

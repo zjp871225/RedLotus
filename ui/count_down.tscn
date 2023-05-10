@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbias1j6xhm5n"]
+
+[ext_resource type="Script" path="res://ui_scripts/count_down.gd" id="1_7xnnl"]
+
+[node name="Label" type="Label"]
+process_mode = 3
+offset_left = 269.0
+offset_top = 408.0
+offset_right = 317.0
+offset_bottom = 450.0
+theme_override_colors/font_color = Color(0.996078, 0.980392, 0.960784, 1)
+theme_override_colors/font_shadow_color = Color(0.0509804, 0.0352941, 0.0352941, 1)
+theme_override_font_sizes/font_size = 40
+script = ExtResource("1_7xnnl")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

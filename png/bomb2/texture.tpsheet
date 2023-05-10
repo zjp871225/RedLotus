@@ -1,0 +1,123 @@
+{
+	"textures": [
+		{
+			"image": "texture.png",
+			"size": {
+				"w": 8925,
+				"h": 1194
+			},
+			"sprites": [
+				{
+					"filename": "bomb3.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 1275,
+						"h": 1194
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bomb4.png",
+					"region": {
+						"x": 1275,
+						"y": 0,
+						"w": 1275,
+						"h": 1194
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bomb5.png",
+					"region": {
+						"x": 2550,
+						"y": 0,
+						"w": 1275,
+						"h": 1194
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bomb6.png",
+					"region": {
+						"x": 3825,
+						"y": 0,
+						"w": 1275,
+						"h": 1194
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bomb7.png",
+					"region": {
+						"x": 5100,
+						"y": 0,
+						"w": 1275,
+						"h": 1194
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bomb8.png",
+					"region": {
+						"x": 6375,
+						"y": 0,
+						"w": 1275,
+						"h": 1194
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bomb9.png",
+					"region": {
+						"x": 7650,
+						"y": 0,
+						"w": 1275,
+						"h": 1194
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7",
+		"format": "RGBA8888",
+	}
+}

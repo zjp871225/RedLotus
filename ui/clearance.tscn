@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://casuj08vt7mln"]
+
+[ext_resource type="Script" path="res://ui_scripts/clearance.gd" id="1_10lfk"]
+[ext_resource type="PackedScene" uid="uid://b0loajwuf71i8" path="res://ui/fade_in.tscn" id="2_2poqo"]
+
+[node name="clearance" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_10lfk")
+
+[node name="fade_in" parent="." instance=ExtResource("2_2poqo")]
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+offset_left = 120.0
+offset_top = 256.0
+offset_right = 511.0
+offset_bottom = 380.0
+theme_override_font_sizes/font_size = 60
+text = "    恭喜通关！"
+
+[node name="reset" type="Button" parent="."]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 480.0
+offset_right = 408.0
+offset_bottom = 568.0
+text = "重新开始"
+
+[node name="score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 400.0
+offset_right = 281.0
+offset_bottom = 425.0
+scale = Vector2(1.67724, 1.45388)
+text = "分数："
+
+[connection signal="pressed" from="reset" to="." method="_on_reset_pressed"]

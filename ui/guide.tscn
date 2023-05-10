@@ -1,0 +1,70 @@
+[gd_scene load_steps=7 format=3 uid="uid://deok7xagusaho"]
+
+[ext_resource type="Texture2D" uid="uid://cge2w6yy0r2cx" path="res://addons/controller_icons/assets/key/arrow_down.png" id="1_mt4y1"]
+[ext_resource type="Texture2D" uid="uid://puc614rf26im" path="res://addons/controller_icons/assets/key/arrow_left.png" id="2_otmga"]
+[ext_resource type="Texture2D" uid="uid://bbjc54bmpv3f8" path="res://addons/controller_icons/assets/key/arrow_right.png" id="3_a6v12"]
+[ext_resource type="Texture2D" uid="uid://d04bqc5v3befo" path="res://addons/controller_icons/assets/key/arrow_up.png" id="4_2ohuf"]
+[ext_resource type="Texture2D" uid="uid://dvu4qvrwgslv3" path="res://addons/controller_icons/assets/key/z.png" id="5_q5428"]
+[ext_resource type="Texture2D" uid="uid://coqj2fcsaxvcn" path="res://addons/controller_icons/assets/key/space.png" id="6_e02iv"]
+
+[node name="guide" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ArrowDown" type="Sprite2D" parent="."]
+position = Vector2(88, 184)
+scale = Vector2(0.48, 0.48)
+texture = ExtResource("1_mt4y1")
+
+[node name="ArrowLeft" type="Sprite2D" parent="."]
+position = Vector2(48, 184)
+scale = Vector2(0.48, 0.48)
+texture = ExtResource("2_otmga")
+
+[node name="ArrowRight" type="Sprite2D" parent="."]
+position = Vector2(128, 184)
+scale = Vector2(0.48, 0.48)
+texture = ExtResource("3_a6v12")
+
+[node name="ArrowUp" type="Sprite2D" parent="."]
+position = Vector2(88, 144)
+scale = Vector2(0.48, 0.48)
+texture = ExtResource("4_2ohuf")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 168.0
+offset_right = 304.0
+offset_bottom = 197.0
+text = "方向键控制飞机方向"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 248.0
+offset_right = 330.0
+offset_bottom = 277.0
+text = "右下角能量满时按Z爆气"
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 320.0
+offset_right = 304.0
+offset_bottom = 349.0
+text = "长按空格发射子弹"
+
+[node name="Z" type="Sprite2D" parent="."]
+position = Vector2(88, 256)
+scale = Vector2(0.74, 0.74)
+texture = ExtResource("5_q5428")
+
+[node name="Space" type="Sprite2D" parent="."]
+position = Vector2(88, 328)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("6_e02iv")

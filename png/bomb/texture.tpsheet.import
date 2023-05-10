@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://d1p45yhlwhv5m"
+path="res://.godot/imported/texture.tpsheet-1e960bd0d5e4a89efa52292d7e2770bb.res"
+
+[deps]
+
+files=["res://png/bomb/texture.sprites/bomb1.tres", "res://png/bomb/texture.sprites/bomb2.tres"]
+
+source_file="res://png/bomb/texture.tpsheet"
+dest_files=["res://.godot/imported/texture.tpsheet-1e960bd0d5e4a89efa52292d7e2770bb.res", "res://png/bomb/texture.sprites/bomb1.tres", "res://png/bomb/texture.sprites/bomb2.tres"]
+
+[params]
+

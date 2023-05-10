@@ -1,0 +1,108 @@
+{
+	"textures": [
+		{
+			"image": "texture.png",
+			"size": {
+				"w": 846,
+				"h": 582
+			},
+			"sprites": [
+				{
+					"filename": "plane12.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 282,
+						"h": 291
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "plane13.png",
+					"region": {
+						"x": 282,
+						"y": 0,
+						"w": 282,
+						"h": 291
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "plane14.png",
+					"region": {
+						"x": 0,
+						"y": 291,
+						"w": 282,
+						"h": 291
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "plane15.png",
+					"region": {
+						"x": 282,
+						"y": 291,
+						"w": 282,
+						"h": 291
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "plane16.png",
+					"region": {
+						"x": 564,
+						"y": 0,
+						"w": 282,
+						"h": 291
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "plane17.png",
+					"region": {
+						"x": 564,
+						"y": 291,
+						"w": 282,
+						"h": 291
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7",
+		"format": "RGBA8888",
+	}
+}

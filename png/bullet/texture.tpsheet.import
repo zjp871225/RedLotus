@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://bqccu6oltd34t"
+path="res://.godot/imported/texture.tpsheet-d71dc291d3b473124a31dbdf0657d1d7.res"
+
+[deps]
+
+files=["res://png/bullet/texture.sprites/子弹.tres", "res://png/bullet/texture.sprites/子弹2.tres"]
+
+source_file="res://png/bullet/texture.tpsheet"
+dest_files=["res://.godot/imported/texture.tpsheet-d71dc291d3b473124a31dbdf0657d1d7.res", "res://png/bullet/texture.sprites/子弹.tres", "res://png/bullet/texture.sprites/子弹2.tres"]
+
+[params]
+

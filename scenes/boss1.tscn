@@ -1,0 +1,163 @@
+[gd_scene load_steps=22 format=3 uid="uid://c07r22hf4o4tx"]
+
+[ext_resource type="Script" path="res://scripts/boss1_root.gd" id="1_2ug5l"]
+[ext_resource type="Script" path="res://scripts/boss1.gd" id="2_kel85"]
+[ext_resource type="Texture2D" uid="uid://c0xava1vat3py" path="res://png/bomb2/texture.sprites/bomb3.tres" id="3_g6khk"]
+[ext_resource type="Texture2D" uid="uid://s1kh1beenn75" path="res://png/enemy1/texture.sprites/enemy7.tres" id="3_iqwlf"]
+[ext_resource type="Texture2D" uid="uid://he6088fnsk7e" path="res://png/enemy1/texture.sprites/enemy8.tres" id="4_et3pv"]
+[ext_resource type="Texture2D" uid="uid://bmdvg76ndicy0" path="res://png/bomb2/texture.sprites/bomb4.tres" id="4_tddvw"]
+[ext_resource type="Texture2D" uid="uid://brjwb6b6d006t" path="res://png/enemy1/texture.sprites/enemy9.tres" id="5_l7ua6"]
+[ext_resource type="Texture2D" uid="uid://cefo3mtqok0p3" path="res://png/bomb2/texture.sprites/bomb5.tres" id="5_pfsg3"]
+[ext_resource type="Texture2D" uid="uid://xuhfbwhqns3g" path="res://png/enemy1/texture.sprites/enemy10.tres" id="6_3s0c0"]
+[ext_resource type="Texture2D" uid="uid://4edrjosri0w0" path="res://png/bomb2/texture.sprites/bomb6.tres" id="6_jgxmy"]
+[ext_resource type="Texture2D" uid="uid://blfkg0qjv77n3" path="res://png/bomb2/texture.sprites/bomb7.tres" id="7_eqwll"]
+[ext_resource type="Texture2D" uid="uid://chgwa1e1eip26" path="res://png/bomb2/texture.sprites/bomb8.tres" id="8_hpi6s"]
+[ext_resource type="Texture2D" uid="uid://6pav8mjur45h" path="res://png/bomb2/texture.sprites/bomb9.tres" id="9_psqgj"]
+[ext_resource type="Texture2D" uid="uid://b0nkdmknwsntt" path="res://png/enemy1/texture.sprites/enemy5.tres" id="10_jflau"]
+[ext_resource type="Texture2D" uid="uid://bh1g0vqvt8chx" path="res://png/enemy1/texture.sprites/enemy6.tres" id="11_8upg1"]
+[ext_resource type="Texture2D" uid="uid://bdahx3uugvt2k" path="res://png/enemy1/texture.sprites/enemy3.tres" id="12_wlk2e"]
+[ext_resource type="Texture2D" uid="uid://ccl6fatteppnf" path="res://png/enemy1/texture.sprites/enemy4.tres" id="13_qp518"]
+[ext_resource type="Texture2D" uid="uid://c5bavddxxhcoj" path="res://png/enemy1/texture.sprites/enemy1.tres" id="14_exisn"]
+[ext_resource type="Texture2D" uid="uid://dkd2eicsgj572" path="res://png/enemy1/texture.sprites/enemy2.tres" id="15_a7j5h"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c03fs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_iqwlf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_et3pv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_l7ua6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_3s0c0")
+}],
+"loop": false,
+"name": &"damage",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_g6khk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_tddvw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pfsg3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_jgxmy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_eqwll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_hpi6s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_psqgj")
+}],
+"loop": false,
+"name": &"dead",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_jflau")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_8upg1")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_wlk2e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_qp518")
+}],
+"loop": true,
+"name": &"left",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_exisn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_a7j5h")
+}],
+"loop": true,
+"name": &"right",
+"speed": 20.0
+}]
+
+[sub_resource type="Curve2D" id="Curve2D_83tgj"]
+bake_interval = 0.01
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -0.541203, 29.797, 0, 0, 0, 0, 132.292, 593.857, 0, 0, 0, 0, -121.608, 597.85, 0, 0, 0, 0, -0.544393, 24.8308, 0, 0, 0, 0, 0.826001, 595.924, 0, 0, 0, 0, -0.541203, 29.797)
+}
+point_count = 6
+
+[node name="boss1" type="Node2D"]
+script = ExtResource("1_2ug5l")
+
+[node name="body" type="Area2D" parent="." groups=["boss"]]
+position = Vector2(1.78814e-07, 0.999979)
+rotation = -0.0225959
+scale = Vector2(0.996428, 0.201477)
+script = ExtResource("2_kel85")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="body"]
+position = Vector2(31.9511, 147.547)
+scale = Vector2(0.526785, 2.14634)
+sprite_frames = SubResource("SpriteFrames_c03fs")
+animation = &"damage"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="body"]
+position = Vector2(33.022, 60.1376)
+scale = Vector2(2.75333, 12.2278)
+polygon = PackedVector2Array(-5, -6, -8, -5, -21.553, -7.84233, -27.1532, 8.1589, -24.4223, 17.7863, -17.5786, 26.7964, -4.35605, 38.9267, -0.258371, 39.0435, 5.02515, 38.4595, 19.9462, 24.9277, 27.9181, 7.52496, 21.195, -7.35837, 8.28644, -6.25716, 5, -6, 3.03307, -7.1415, -2.85091, -5.84005)
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="body"]
+position = Vector2(36.1694, 197.37)
+rotation = 0.00160996
+scale = Vector2(7.92969, 35.4559)
+
+[node name="fire" type="Marker2D" parent="body"]
+position = Vector2(32.3398, 552.935)
+
+[node name="bullets" type="Node2D" parent="."]
+
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2(0.558351, -4.99823)
+rotation = 0.00317857
+scale = Vector2(0.996451, 0.201361)
+curve = SubResource("Curve2D_83tgj")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(-0.541203, 29.797)
+rotation = 0.881233
+rotates = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
+rotation = -0.888226
+remote_path = NodePath("../../../body")
+update_rotation = false
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+
+[node name="shoot_timer" type="Timer" parent="."]
+
+[connection signal="area_entered" from="body" to="body" method="_on_area_entered"]
+[connection signal="tree_exiting" from="body" to="." method="_on_body_tree_exiting"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="shoot_timer" to="body" method="_on_shoot_timer_timeout"]

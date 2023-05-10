@@ -1,0 +1,79 @@
+[gd_scene load_steps=11 format=3 uid="uid://ctffpxr4gm20x"]
+
+[ext_resource type="Script" path="res://scripts/bullet_fury.gd" id="1_v7rac"]
+[ext_resource type="Texture2D" uid="uid://brin72r16edya" path="res://png/bullet_fury/子弹7.png" id="2_fnnys"]
+[ext_resource type="Texture2D" uid="uid://dqt6rv4awn4yj" path="res://png/bullet_fury/子弹9.png" id="2_nxisk"]
+[ext_resource type="Texture2D" uid="uid://bnniwqcp2qald" path="res://png/bullet_fury/子弹8.png" id="3_qaceb"]
+[ext_resource type="Texture2D" uid="uid://dqrlrtwpcob8a" path="res://png/bullet_fury/子弹10.png" id="3_wtggu"]
+[ext_resource type="Texture2D" uid="uid://ctgoo3holyf74" path="res://png/bullet_fury/子弹11.png" id="4_n1kd4"]
+[ext_resource type="Texture2D" uid="uid://xlg81a3ygx6m" path="res://png/bullet_fury/子弹12.png" id="7_3hnpj"]
+[ext_resource type="Texture2D" uid="uid://b6x7nqu4c4rmy" path="res://png/bullet_fury/子弹13.png" id="8_t88wv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_db0mx"]
+size = Vector2(111, 1980)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_28rrj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_nxisk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wtggu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_n1kd4")
+}],
+"loop": true,
+"name": &"boom",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_fnnys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qaceb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_3hnpj")
+}, {
+"duration": 2.0,
+"texture": ExtResource("8_t88wv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_3hnpj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qaceb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_fnnys")
+}],
+"loop": false,
+"name": &"default",
+"speed": 25.0
+}]
+
+[node name="Bullet_fury" type="Node2D"]
+position = Vector2(0, 1)
+script = ExtResource("1_v7rac")
+
+[node name="Area2D" type="Area2D" parent="." groups=["bullet"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-4.5, -968)
+shape = SubResource("RectangleShape2D_db0mx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-3, -966.455)
+scale = Vector2(0.448688, 0.920961)
+sprite_frames = SubResource("SpriteFrames_28rrj")
+frame = 6
+frame_progress = 1.0
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

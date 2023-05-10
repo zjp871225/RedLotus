@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://c3ct808cjmcnh"
+path="res://.godot/imported/texture.tpsheet-24cbe4e0e701711ca5043dd2431b343d.res"
+
+[deps]
+
+files=["res://png/enemy1/texture.sprites/enemy1.tres", "res://png/enemy1/texture.sprites/enemy10.tres", "res://png/enemy1/texture.sprites/enemy2.tres", "res://png/enemy1/texture.sprites/enemy3.tres", "res://png/enemy1/texture.sprites/enemy4.tres", "res://png/enemy1/texture.sprites/enemy5.tres", "res://png/enemy1/texture.sprites/enemy6.tres", "res://png/enemy1/texture.sprites/enemy7.tres", "res://png/enemy1/texture.sprites/enemy8.tres", "res://png/enemy1/texture.sprites/enemy9.tres"]
+
+source_file="res://png/enemy1/texture.tpsheet"
+dest_files=["res://.godot/imported/texture.tpsheet-24cbe4e0e701711ca5043dd2431b343d.res", "res://png/enemy1/texture.sprites/enemy1.tres", "res://png/enemy1/texture.sprites/enemy10.tres", "res://png/enemy1/texture.sprites/enemy2.tres", "res://png/enemy1/texture.sprites/enemy3.tres", "res://png/enemy1/texture.sprites/enemy4.tres", "res://png/enemy1/texture.sprites/enemy5.tres", "res://png/enemy1/texture.sprites/enemy6.tres", "res://png/enemy1/texture.sprites/enemy7.tres", "res://png/enemy1/texture.sprites/enemy8.tres", "res://png/enemy1/texture.sprites/enemy9.tres"]
+
+[params]
+

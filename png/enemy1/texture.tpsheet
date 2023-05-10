@@ -1,0 +1,168 @@
+{
+	"textures": [
+		{
+			"image": "texture.png",
+			"size": {
+				"w": 1288,
+				"h": 1113
+			},
+			"sprites": [
+				{
+					"filename": "enemy1.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 322,
+						"h": 371
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enemy10.png",
+					"region": {
+						"x": 322,
+						"y": 0,
+						"w": 322,
+						"h": 371
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enemy2.png",
+					"region": {
+						"x": 0,
+						"y": 371,
+						"w": 322,
+						"h": 371
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enemy3.png",
+					"region": {
+						"x": 322,
+						"y": 371,
+						"w": 322,
+						"h": 371
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enemy4.png",
+					"region": {
+						"x": 644,
+						"y": 0,
+						"w": 322,
+						"h": 371
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enemy5.png",
+					"region": {
+						"x": 644,
+						"y": 371,
+						"w": 322,
+						"h": 371
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enemy6.png",
+					"region": {
+						"x": 0,
+						"y": 742,
+						"w": 322,
+						"h": 371
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enemy7.png",
+					"region": {
+						"x": 322,
+						"y": 742,
+						"w": 322,
+						"h": 371
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enemy8.png",
+					"region": {
+						"x": 644,
+						"y": 742,
+						"w": 322,
+						"h": 371
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enemy9.png",
+					"region": {
+						"x": 966,
+						"y": 0,
+						"w": 322,
+						"h": 371
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7",
+		"format": "RGBA8888",
+	}
+}

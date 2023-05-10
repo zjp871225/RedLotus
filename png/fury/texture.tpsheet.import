@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://duhdl5d62xyjw"
+path="res://.godot/imported/texture.tpsheet-56838b95db48aa8cdc68bc1795c6466f.res"
+
+[deps]
+
+files=["res://png/fury/texture.sprites/plane12.tres", "res://png/fury/texture.sprites/plane13.tres", "res://png/fury/texture.sprites/plane14.tres", "res://png/fury/texture.sprites/plane15.tres", "res://png/fury/texture.sprites/plane16.tres", "res://png/fury/texture.sprites/plane17.tres"]
+
+source_file="res://png/fury/texture.tpsheet"
+dest_files=["res://.godot/imported/texture.tpsheet-56838b95db48aa8cdc68bc1795c6466f.res", "res://png/fury/texture.sprites/plane12.tres", "res://png/fury/texture.sprites/plane13.tres", "res://png/fury/texture.sprites/plane14.tres", "res://png/fury/texture.sprites/plane15.tres", "res://png/fury/texture.sprites/plane16.tres", "res://png/fury/texture.sprites/plane17.tres"]
+
+[params]
+
